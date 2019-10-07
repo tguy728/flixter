@@ -104,7 +104,7 @@
         <h4 class="modal-title" id="newSectionModal">Add a new section</h4>
       </div>
       <div class="modal-body">
-      <%= simple_form_for @section, url: instructor_section_path(current_course) do |f| %>
+      <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
         <%= f.input :title %>
       </div>
       <div class="modal-footer">
